@@ -1,61 +1,68 @@
-.subscribe_box-signin {
+.subscribe_box-signin{
   display: flex;
   height: 120vh;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+align-items: center;
+flex-direction: column;
 }
-
-.login-box {
+.back_home_page{
+  padding: 10px 35px;
+  border-radius: 5px;
+text-decoration: none;
+color: black;
+background-color: orange;
+cursor: pointer;
+}
+.back_home_page:hover{
+  background-color: gold;
+}
+.login-box{
   height: auto;
-  min-width: 40%;
+  max-width: 33%;
   border-radius: 5px;
   border: 1px solid gray;
 }
-
-.login-box-registr {
+.login-box-registr{
   width: 80%;
   margin: auto;
   position: relative;
   padding: 14px 0;
 }
-.introduction-signin {
+.introduction-signin{
   font-weight: 400;
   margin: 10px 0;
 }
 .signin-form > div {
   margin: 20px 0px;
 }
-
-.signin-form input {
+.signin-form  input{
   outline: none;
   width: 99%;
   padding: 10px 5px;
   border-radius: 5px;
   border: 1px solid gray;
 }
-.signin-form input:focus {
+.signin-form  input:focus{
   box-shadow: 0px 0px 10px orangered;
   border: 1px solid orangered;
 }
-.password-box {
+.password-box{
   display: flex;
   justify-content: space-between;
 }
-.signin-form label {
+.signin-form  label{
   font-weight: 600;
 }
-.password-box > span {
+.page-recreate-password{
   color: dodgerblue;
   cursor: pointer;
   font-weight: 400;
 }
-.password-box > span:hover {
+.page-recreate-password:hover{
   color: orangered;
   cursor: pointer;
   text-decoration: underline;
 }
-.btn-signin {
+.btn-signin{
   width: 100%;
   padding: 10px 0;
   border-radius: 5px;
@@ -65,47 +72,48 @@
   cursor: pointer;
   background-color: rgb(255, 200, 97);
 }
-.btn-signin:hover {
+.btn-signin:hover{
   background-color: rgb(255, 192, 75);
 }
-.btn-signin:focus {
+.btn-signin:focus{
   background-color: rgb(211, 211, 211);
   box-shadow: 0px 0px 15px orangered;
 }
-.signin-conditions-text {
+.signin-conditions-text{
   margin-top: 30px;
 }
-.check-box-signin {
+.check-box-signin{
   margin-top: 35px;
 }
-.more-info-signin {
+.more-info-signin{
   color: dodgerblue;
 }
-.icon-down-signin {
+.icon-down-signin{
   color: gray;
 }
-.icon-down-signin:hover {
-  color: black;
+.icon-down-signin:hover{
+ color: black;
 }
-.condition-text-signin-link {
+.condition-text-signin-link{
   color: dodgerblue;
 }
-.condition-text-signin-link:hover {
+.condition-text-signin-link:hover{
   color: orangered;
   cursor: pointer;
   text-decoration: underline;
 }
-.explaining-box-signin {
+.explaining-box-signin{
   height: 200px;
   width: 130%;
   border-radius: 5px;
+  padding: 10px;
   background-color: white;
   position: absolute;
   top: 32%;
   left: -15%;
   box-shadow: 0px 0px 7px gray;
 }
-.main-text-box-signin {
+.main-text-box-signin{
   width: 100%;
   padding: 0 10px;
   height: 22%;
@@ -113,19 +121,19 @@
   align-items: center;
   justify-content: space-between;
   background-color: rgb(212, 212, 212);
-  border-radius: 5px 5px 0px 0px;
+border-radius: 5px 5px 0px 0px;
 }
-.close-btn-signin {
+.close-btn-signin{
   cursor: pointer;
 }
-.close-btn-signin:hover {
-  color: black;
-  transform: scale(1.1);
+.close-btn-signin:hover{
+color: black;
+transform: scale(1.1);
 }
 .explaining-box-signin > p {
   margin-top: 20px;
 }
-.traingular-box-signin {
+.traingular-box-signin{
   height: 0;
   width: 0;
   border-left: 8px solid transparent;
@@ -136,31 +144,51 @@
   left: 50%;
   right: 50%;
 }
-.more-info-signin:hover ~ .explaining-box-signin {
+.more-info-signin:hover  ~  .explaining-box-signin{
   display: block;
 }
-.more-info-signin:hover {
+.more-info-signin:hover{
   color: orangered;
   cursor: pointer;
   text-decoration: underline;
 }
-.box-preference-signin {
+.box-preference-signin{
   display: flex;
   align-items: center;
-  color: rgb(119, 119, 119);
-  margin-top: 40px;
-}
-.create-account-signin {
-  padding: 10px 0;
+  justify-content: center;
+  margin: auto;
   width: 100%;
+  color: rgb(119, 119, 119);
+  margin-top: 20px;
+}
+.box-preference-signin > span{
+  min-width: 33%;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+.btn-create-box{
+display: flex;
+justify-content: center;
+width: 100%;
+}
+.create-account-signin{
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(197, 197, 197);
+  border-radius: 5px;
+  width: 100%;
+  text-decoration: none;
+  color: black;
   margin-top: 20px;
   cursor: pointer;
 }
-.create-account-signin:focus {
+.create-account-signin:focus{
   box-shadow: 0px 0px 15px orangered;
 }
-@media only screen and (max-width: 400px) {
-  .box-preference-signin {
-    display: none;
+@media only screen and (max-width: 400px){
+  .box-preference-signin{
+      display: none;
   }
 }

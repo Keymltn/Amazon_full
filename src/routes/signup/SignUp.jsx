@@ -3,6 +3,7 @@ import "./SignUp.css";
 import loginLogo from "../../assets/images/login_logo.png";
 import { Si1Password } from "react-icons/si";
 import { FaCaretRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
   return (
@@ -72,9 +73,9 @@ const Signup = () => {
           </p>
           <div className="moreinfo-box-signup">
             <p>Already have an account?</p>{" "}
-            <span className="signin-link-account">
+            <Link to="/login" className="signin-link-account">
               Sign in <FaCaretRight />{" "}
-            </span>
+            </Link>
           </div>
         </div>
       </div>

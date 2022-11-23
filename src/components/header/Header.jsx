@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Header.css';
+import {Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 import { useLocation } from 'react-router-dom';
 
@@ -79,7 +80,7 @@ function Header({setIsSidebarOpen}) {
           </a>
         </div>
         <div className="login">
-          <a href="index.html">
+          <Link to="/login">
             <p className="login__sign">Hello, sign in</p>
             <div className="accaunt">
               <p className="accound__sign">Account & Lists</p>
@@ -98,7 +99,7 @@ function Header({setIsSidebarOpen}) {
                 />
               </svg>
             </div>
-          </a>
+          </Link>
         </div>
         <div className="order">
           <p className="order__return">Returns</p>
