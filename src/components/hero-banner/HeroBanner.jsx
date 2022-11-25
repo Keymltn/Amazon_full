@@ -67,23 +67,6 @@ const Banner = () => {
       >
         <FiChevronRight />
       </button>
-
-      <div className={c.dots}>
-        {images.map((dot, index) => (
-          <div
-            onClick={() => setImageCount(index)}
-            style={
-              index === imageCount
-                ? { background: "dodgerblue", transform: "scale(1.3)" }
-                : null
-            }
-            className={c.point}
-            key={uuidv4()}
-          >
-            {" "}
-          </div>
-        ))}
-      </div>
     </div>
   );
 };

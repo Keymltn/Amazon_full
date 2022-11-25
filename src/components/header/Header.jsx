@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import './Header.css';
-import {Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from '../../assets/images/logo.png';
 import { useLocation } from 'react-router-dom';
 
-function Header({setIsSidebarOpen}) {
+function Header({ setIsSidebarOpen }) {
   const { pathname } = useLocation();
   const [selectedOption, setSelectedOption] = useState("all");
 
-  if(pathname.includes("login") || pathname.includes("signup")){
+  if (pathname.includes("login") || pathname.includes("signup")) {
     return
   }
 
@@ -16,12 +16,14 @@ function Header({setIsSidebarOpen}) {
     <div className="header">
       <header>
         <div className="img">
-          <a href=" index.html">
-            <img
-              src={logo}
-              alt=""
-              width={100}
-            />
+          <a href="index.html">
+            <Link to='/'>
+              <img
+                src={logo}
+                alt=""
+                width={100}
+              />
+            </Link>
           </a>
         </div>
         <div className="location">
@@ -45,7 +47,7 @@ function Header({setIsSidebarOpen}) {
         </div>
         <form action="post">
           <div className="form">
-            <select name="filter" className="filter" style={selectedOption.length <= 10  ? {width: selectedOption.length  * 14 + "px"} : {width: selectedOption.length  * 8 + "px"}}   onChange={(e) => {setSelectedOption(e.target.value)}}>
+            <select name="filter" className="filter" style={selectedOption.length <= 10 ? { width: selectedOption.length * 14 + "px" } : { width: selectedOption.length * 8 + "px" }} onChange={(e) => { setSelectedOption(e.target.value) }}>
               <option value="all">All</option>
               <option value="arts & crafts">Arts & Crafts</option>
               <option value="automotive">Automotive</option>
@@ -119,7 +121,7 @@ function Header({setIsSidebarOpen}) {
       </header>
       <div className="navbar">
         <div className="navbar-nav">
-          <div className="navbar-nav-list" onClick={() => {setIsSidebarOpen(true)}}>
+          <div className="navbar-nav-list" onClick={() => { setIsSidebarOpen(true) }}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"

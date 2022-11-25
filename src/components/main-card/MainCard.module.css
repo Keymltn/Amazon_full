@@ -1,5 +1,31 @@
-.card{
+.card {
   max-width: 350px;
   height: 385px;
-  background-color: blue;
+  background-color: rgb(250, 250, 250);
+  padding: 20px;
+}
+
+.container_div {
+  display: grid;
+  grid-template-columns: repeat(2, 150px);
+  grid-template-rows: repeat(2, 130px);
+  gap: 10px;
+}
+
+.single_img {
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.single_imgs {
+  width: 147px;
+  height: 102px;
+}
+
+.ab_link_under:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #C7511F;
 }

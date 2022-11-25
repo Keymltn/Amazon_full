@@ -1,0 +1,40 @@
+.asd >   h2{
+    padding-top: 20px;
+    font-weight: 400!important;
+    font-style: normal!important;
+    text-transform: none!important;
+    text-decoration: none!important;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img_ofApleePH{
+    width: 275px;
+    height: 280px;
+}
+
+.to_side_infos{
+    display: flex;
+}
+
+.asd > a{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Arial,sans-serif;
+    color: #0F1111;
+    padding-top: 10px;
+    text-decoration: none;
+}
+ 
+.asd > p{
+    color: #565959!important;
+    padding: 10px 0;
+}
+
+.left_infos{
+    padding: 30px 10px;
+}

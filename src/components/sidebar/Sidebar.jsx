@@ -1,9 +1,14 @@
 import c from './Sidebar.module.css';
 import { FiArrowLeft, FiX } from 'react-icons/fi';
+import { HiUserCircle } from 'react-icons/hi';
+import { FiChevronRight } from 'react-icons/fi';
+import { FiChevronDown } from 'react-icons/fi';
+import { BsChevronUp } from 'react-icons/bs';
 import { useEffect, useRef, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
+import { Link } from 'react-router-dom';
 
-const Sidebar = ({isSidebarOpen, setIsSidebarOpen}) => {
+const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
 
   const sidebaropen = useRef();
   const [sidebarLimit, setSidebarLimit] = useState(4);
@@ -13,112 +18,139 @@ const Sidebar = ({isSidebarOpen, setIsSidebarOpen}) => {
       sidebarmaintitle: "Amazon music",
       subitems: [
         "Amazon music unlimited",
-        "Podcasts"
+        "Free streaming music",
+        "Podcasts",
+        "Play music",
       ]
     },
     {
-      sidebarmaintitle: "Amazon music 1",
+      sidebarmaintitle: "Kindle E-readers & Books",
       subitems: [
-        "Amazon music unlimited",
-        "Podcasts"
+        "All new Kindle Kids",
+        "All new Kindle",
+        "Kindle paper white",
+        "Kindle Oasis"
       ]
     },
     {
-      sidebarmaintitle: "Amazon music 2",
+      sidebarmaintitle: "Amazon Appstore",
       subitems: [
-        "Amazon music unlimited",
-        "Podcasts"
+        "All Apps an Games",
+        "Games",
+        "Amazon Coins",
+        "Download Amazon Appstore"
       ]
     },
     {
-      sidebarmaintitle: "Amazon music 3",
+      sidebarmaintitle: "Electronics",
       subitems: [
-        "Amazon music unlimited 3",
-        "Podcasts 3"
+        "Camer & Photo",
+        "Car & Vehicle Electronics",
+        "Headphones",
+        "Home Audio"
       ]
     },
     {
-      sidebarmaintitle: "Amazon music 4",
+      sidebarmaintitle: "Comuters",
       subitems: [
-        "Amazon music unlimited 4",
-        "Podcasts 4"
+        "Computer Components",
+        "Monitors",
+        "Printers",
+        "Scanners"
       ]
     },
     {
-      sidebarmaintitle: "Amazon music 4",
+      sidebarmaintitle: "Smart Home",
       subitems: [
-        "Amazon music unlimited 4",
-        "Podcasts 4"
+        "Amazon Smart Home",
+        "Smart Home Lighting",
+        "Smart Locks and Entry",
+        "Kitchen"
       ]
     },
     {
-      sidebarmaintitle: "Amazon music 4",
+      sidebarmaintitle: "Arts & Crafts",
       subitems: [
-        "Amazon music unlimited 4",
-        "Podcasts 4"
+        "Painting, Drawing & Art Supplies",
+        "Crafting",
+        "Fabric",
+        "Needlework"
       ]
     },
     {
-      sidebarmaintitle: "Amazon music 4",
+      sidebarmaintitle: "Automative",
       subitems: [
-        "Amazon music unlimited 4",
-        "Podcasts 4"
+        "Car Care",
+        "Interior Accessories",
+        "Exterior Accessories",
+        "Oils & Fluids"
       ]
     },
     {
-      sidebarmaintitle: "Amazon music 4",
+      sidebarmaintitle: "Baby",
       subitems: [
-        "Amazon music unlimited 4",
-        "Podcasts 4"
+        "Baby Care",
+        "Baby Stationery",
+        "Feeding",
+        "Gifts"
       ]
     },
     {
-      sidebarmaintitle: "Amazon music 4",
+      sidebarmaintitle: "Video Games",
       subitems: [
-        "Amazon music unlimited 4",
-        "Podcasts 4"
+        "Wii",
+        "PC",
+        "PlayStation 3",
+        "PlayStation 4"
       ]
     }
   ]
 
   useEffect(() => {
-    if(selectedSidebarItem){
+    if (selectedSidebarItem) {
       sidebaropen.current.scrollLeft = sidebaropen.current.offsetWidth
     }
-    else{
+    else {
       sidebaropen.current.scrollLeft = 0
     }
   }, [selectedSidebarItem])
 
   return (
     <div ref={sidebaropen} className={isSidebarOpen === true ? `${c.sidebar} ${c.active}` : `${c.sidebar}`}>
-        <FiX className={c.close} onClick={() => {setIsSidebarOpen(false)}}/>
-        <div className={c.sidebarWrapper} >
+      <FiX style={setIsSidebarOpen === true ? { display: "block" } : { display: "none" }} className={c.close} onClick={() => { setIsSidebarOpen(false) }} />
+      <div className={c.sidebarWrapper} >
+        <Link className={c.link_sign} to="/Login" onClick={() => { setIsSidebarOpen(false) }}>
+          <HiUserCircle style={{ marginRight: "10px", fontSize: "30px" }} />
+          <h2>Hello, Sign in</h2>
+        </Link>
+        {
+          sidebarData.slice(0, sidebarLimit).map(sidebarEl =>
+            <div key={uuidv4()} className={c.sidebarItem} onClick={() => { setSelectedSidebarItem(sidebarEl) }}>
+              <p>{sidebarEl.sidebarmaintitle}</p>
+              <div className=""><FiChevronRight className={c.to_right} /></div>
+            </div>
+          )
+        }
+        <div className={c.sidebarItem} onClick={() => { sidebarLimit <= 4 ? setSidebarLimit(sidebarData.length) : setSidebarLimit(4) }}>
+          <p>{sidebarLimit === 4 ? <>See more <FiChevronDown style={{ marginLeft: "281px", fontWeight: "900", fontSize: "25px" }} /> </> : <>See less <BsChevronUp style={{ marginLeft: "294px", fontWeight: "900" }} /> </>}</p>
+        </div>
+      </div>
+
+      <div className={c.sidebarOpen}>
+        <div style={{display: "flex", marginLeft: "10px"}}>
+          <FiArrowLeft style={{ marginLeft: "-30px", fontSize: "20px" }} onClick={() => { setSelectedSidebarItem(null) }} />
+          <h3>MAIN MENU</h3>
+        </div>
+          <hr style={{borderLeft: "1px solid transparent", borderTop: "1px solid transparent", borderRight: "1px solid transparent", borderBottom: "2px solid gray", margin: "10px 0"}}/>
+        <div>
+          <h2 style={{margin: "10px 0 20px", color: "orange"  }}>{selectedSidebarItem?.sidebarmaintitle}</h2>
           {
-            sidebarData.slice(0, sidebarLimit).map(sidebarEl =>
-              <div key={uuidv4()} className={c.sidebarItem} onClick={() => {setSelectedSidebarItem(sidebarEl)}}>
-                <p>{sidebarEl.sidebarmaintitle}</p>
-                <p>{JSON.stringify(sidebarEl)}</p>
-              </div>  
+            selectedSidebarItem?.subitems.map(i =>
+              <p style={{margin: "25px 0 25px", color: "#111"}} key={uuidv4()}>{i}</p>
             )
           }
-          <div className={c.sidebarItem} onClick={() => {sidebarLimit <= 4 ? setSidebarLimit(sidebarData.length) : setSidebarLimit(4)}}>
-             <p>{sidebarLimit === 4 ? "See more" : "See less" }</p>
-          </div>
         </div>
-        <div  className={c.sidebarOpen}>
-          <h1>enfjk</h1>
-          <h1>enfjk</h1>
-          <FiArrowLeft onClick={() => {setSelectedSidebarItem(null)}}/>
-          <div>
-            <h2>{selectedSidebarItem?.sidebarmaintitle}</h2>
-            {
-              selectedSidebarItem?.subitems.map(i =>
-                <p key={uuidv4()}>{i}</p>  
-              )
-            }
-          </div>
-        </div>
+      </div>
     </div>
   )
 }

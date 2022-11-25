@@ -1,13 +1,144 @@
-.main{
+.main {
   height: auto;
-  margin-top:  -200px;
+  margin-top: -448px;
   z-index: 3;
   position: relative;
 }
 
-.wrapper{
+.wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 10px;
+}
+
+.carusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.main__carusel__content {
+  height: 300px;
+  background-color: #fafafa73;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto 20px auto;
+  overflow: auto;
+}
+
+.main__carusel__content::-webkit-scrollbar {
+  height: 10px;
+  background-color: transparent;
+}
+
+.main__carusel__content::-webkit-scrollbar-thumb {
+  background-color: rgb(195, 189, 189);
+  border-radius: 20px;
+}
+
+.carusel__images {
+  width: 200px;
+  height: 200px;
+}
+
+.carusel__left {
+  padding: 30px 7px;
+  cursor: pointer;
+  border: transparent;
+  font-size: 30px;
+  opacity: .5;
+  position: absolute;
+  left: 0;
+  transition: .5s;
+}
+
+.carusel__left:hover,
+.carusel__right:hover {
+  opacity: .9;
+  transition: .5s;
+}
+
+.carusel__right {
+  padding: 30px 7px;
+  cursor: pointer;
+  border: transparent;
+  font-size: 30px;
+  opacity: .5;
+  position: absolute;
+  right: 0px;
+  transition: .5s;
+}
+
+.main__footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+.main__footer__last__group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.first__line {
+  width: 100%;
+}
+
+.last__line {
+  width: 100%;
+}
+
+.main__footer__content {
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.main__footer__title {
+  color: #000;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.main__footer__last__group__first__text {
+  font-size: 11px;
+}
+
+.main__footer__last__group__last__text {
+  font-size: 11px;
+  cursor: pointer;
+  color: #007185;
+}
+
+.main__footer__last__group__last__text:hover {
+  text-decoration: underline;
+  color: dodgerblue;
+}
+
+.main__footer__btn {
+  cursor: pointer;
+  padding: 4px 120px;
+  color: #000;
+  font-size: 12px;
+  line-height: 28px;
+  font-weight: 700;
+  background-color: #edbc41;
+  border-radius: 5px;
+}
+
+.link {
+  text-decoration: none;
 }

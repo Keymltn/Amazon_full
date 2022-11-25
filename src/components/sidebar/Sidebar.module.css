@@ -17,7 +17,8 @@
 }
 
 .close{
-  position: absolute;
+  position: fixed;
+  /* display: none; */
   left: 400px;
   font-size: 30px;
 }
@@ -25,20 +26,42 @@
 .sidebarItem{
   width: 100%;
   padding: 15px 10px;
-  background-color: blue;
-  margin: 5px 0;
+  background-color: rgb(255, 255, 255);
+  margin: .8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(104, 104, 104);
 }
 
 .sidebarWrapper{
   width: 100%;
   min-width: 400px;
   height: 100%;
-  background-color: purple;
+  background-color: rgb(168, 168, 168);
 }
 
 .sidebarOpen{
   width: 100%;
   min-width: 400px;
   height: 100%;
-  background-color: green;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 20px 0 36px;
+}
+
+.link_sign{
+  background-color: #232f3e;
+  height: 50px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.sidebarItem:hover{
+  color: rgb(0, 0, 0);
+}
+
+.to_right{
+  font-size: 25px;
 }
