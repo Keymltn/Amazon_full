@@ -142,3 +142,12 @@
 .link {
   text-decoration: none;
 }
+
+@media only screen and (max-width:1240px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+}

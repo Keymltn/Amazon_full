@@ -13,7 +13,7 @@
 }
 
 .single_img {
-  height: 300px;
+  height: 80%;
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -29,3 +29,76 @@
   cursor: pointer;
   color: #C7511F;
 }
+
+@media only screen and (max-width:1427px) {
+  .card {
+    max-width: 320px;
+    height: 410px;
+  }
+
+  .single_imgs {
+    width: 130px;
+    height: 100px;
+  }  
+
+  .container_div {
+    gap: 6px;
+  }
+}
+
+@media only screen and (max-width:1290px) {
+  .card {
+    max-width: 290px;
+    height: 380px;
+  }
+
+  .single_imgs {
+    width: 120px;
+    height: 100px;
+  }  
+
+  .container_div {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: repeat(2, 120px);
+    gap: 4px;
+  }
+
+  .link_of_little_cont{
+    width: 130px;
+    height: 120px;
+  }
+
+  .h2_cards{
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width:1240px) {
+  .card {
+    max-width: 386px;
+    height: 420px;
+  }
+
+  .single_imgs {
+    width: 163px;
+    height: 102px;
+  }  
+
+  .container_div {
+    grid-template-columns: repeat(2, 172px);
+    grid-template-rows: repeat(2, 138px);
+  }
+
+  .link_of_little_cont{
+    width: 130px;
+    height: 120px;
+  }
+
+  .h2_cards{
+    font-size: 23px;
+  }
+}
+
+/* asd */
+

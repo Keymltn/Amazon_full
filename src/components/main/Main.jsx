@@ -5,7 +5,7 @@ import MainCard from '../main-card/MainCard';
 import allCards from '../../dummy-data.json';
 import { useState, useEffect, useRef } from 'react';
 import { v4 as uuidv4 } from 'uuid';
-import { MdOutlineArrowBackIosNew,  MdArrowForwardIos} from "react-icons/md"
+import { MdOutlineArrowBackIosNew, MdArrowForwardIos } from "react-icons/md"
 import { Link } from "react-router-dom";
 
 
@@ -99,17 +99,17 @@ const Main = () => {
           </button>
         </div>
         <div className={c.main__footer}>
-                <hr className={c.first__line} />
-                <div className={c.main__footer__content}>
-                    <p className={c.main__footer__title}>See personalized recommendations</p>
-                    <Link to="/login" className={c.main__footer__btn}>Sign in</Link>
-                    <div className={c.main__footer__last__group}>
-                        <p className={c.main__footer__last__group__first__text}>New customer?</p>
-                        <p className={c.main__footer__last__group__last__text}>Start here.</p>
-                    </div>
-                </div>
-                <hr className={c.last__line} />
+          <hr className={c.first__line} />
+          <div className={c.main__footer__content}>
+            <p className={c.main__footer__title}>See personalized recommendations</p>
+            <Link to="/login" className={c.main__footer__btn}>Sign in</Link>
+            <div className={c.main__footer__last__group}>
+              <p className={c.main__footer__last__group__first__text}>New customer?</p>
+              <p className={c.main__footer__last__group__last__text}>Start here.</p>
             </div>
+          </div>
+          <hr className={c.last__line} />
+        </div>
       </main>
     </Container>
   )
