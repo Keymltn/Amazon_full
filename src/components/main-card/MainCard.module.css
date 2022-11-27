@@ -30,6 +30,11 @@
   color: #C7511F;
 }
 
+.p_grids{
+  color: gray;
+  font-size: 12px;
+}
+
 @media only screen and (max-width:1427px) {
   .card {
     max-width: 320px;
@@ -102,3 +107,399 @@
 
 /* asd */
 
+@media only screen and (max-width:1200px) {
+  .card {
+    max-width: 350px;
+    height: 420px;
+  }
+
+  .single_imgs {
+    width: 142px;
+    height: 92px;
+  }  
+
+  .container_div {
+    grid-template-columns: repeat(2, 162px);
+    grid-template-rows: repeat(2, 128px);
+  }
+
+  .link_of_little_cont{
+    width: 130px;
+    height: 120px;
+  }
+
+  .h2_cards{
+    font-size: 23px;
+  }
+}
+ 
+/* asdasdasdasdasdas */
+ 
+@media only screen and (max-width:1094px) {
+  .card {
+    max-width: 330px;
+    height: 420px;
+  }
+
+  .single_imgs {
+    width: 122px;
+    height: 82px;
+  }  
+
+  .container_div {
+    grid-template-columns: repeat(2, 162px);
+    grid-template-rows: repeat(2, 128px);
+  }
+
+  .link_of_little_cont{
+    width: 130px;
+    height: 120px;
+  }
+
+  .h2_cards{
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width:1034px) {
+  .card {
+    max-width: 320px;
+    height: 420px;
+  }
+
+  .single_imgs {
+    width: 122px;
+    height: 82px;
+  }  
+
+  .container_div {
+    grid-template-columns: repeat(2, 162px);
+    grid-template-rows: repeat(2, 128px);
+  }
+
+  .link_of_little_cont{
+    width: 130px;
+    height: 120px;
+  }
+
+  .h2_cards{
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width:1003px) {
+  .card {
+    max-width: 300px;
+    height: 420px;
+  }
+
+  .single_imgs {
+    width: 112px;
+    height: 72px;
+  }  
+
+  .container_div {
+    grid-template-columns: repeat(2, 132px);
+    grid-template-rows: repeat(2, 108px);
+    gap: 4px;
+  }
+
+  .link_of_little_cont{
+    width: 130px;
+    height: 120px;
+  }
+
+  .h2_cards{
+    font-size: 23px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width:942px) {
+  .card {
+    max-width: 280px;
+    height: 400px;
+  }
+
+  .single_imgs {
+    width: 112px;
+    height: 72px;
+  }  
+
+  .container_div {
+    grid-template-columns: repeat(2, 132px);
+    grid-template-rows: repeat(2, 108px);
+    gap: 4px;
+  }
+
+  .link_of_little_cont{
+    width: 130px;
+    height: 120px;
+  }
+
+  .h2_cards{
+    font-size: 23px;
+    padding-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width:885px) {
+  .card {
+    max-width: 260px;
+    height: 360px;
+  }
+
+  .single_imgs {
+    width: 102px;
+    height: 82px;
+  }  
+
+  .container_div {
+    grid-template-columns: repeat(2, 122px);
+    grid-template-rows: repeat(2, 108px);
+    gap: 4px;
+  }
+
+  .link_of_little_cont{
+    width: 130px;
+    height: 120px;
+  }
+
+  .h2_cards{
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .p_grids{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width:821px) {
+  .card {
+    max-width: 230px;
+    height: 330px;
+  }
+
+  .single_imgs {
+    width: 92px;
+    height: 72px;
+  }  
+
+  .container_div {
+    grid-template-columns: repeat(2, 102px);
+    grid-template-rows: repeat(2, 108px);
+    gap: 4px;
+  }
+
+  .link_of_little_cont{
+    width: 130px;
+    height: 120px;
+  }
+
+  .h2_cards{
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .p_grids{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width:740px) {
+  .card {
+    max-width: 350px;
+    height: 385px;
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+  }
+  
+  .container_div {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 130px);
+    gap: 10px;
+  }
+  
+  .single_img {
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .single_imgs {
+    width: 147px;
+    height: 102px;
+  }
+}
+
+@media only screen and (max-width:735px) {
+  .card {
+    max-width: 330px;
+    height: 365px;
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+  }
+  
+  .container_div {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: repeat(2, 120px);
+    gap: 10px;
+  }
+  
+  .single_imgs {
+    width: 137px;
+    height: 92px;
+  }
+}
+
+@media only screen and (max-width:696px) {
+  .card {
+    max-width: 310px;
+    height: 345px;
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+  }
+  
+  .container_div {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: repeat(2, 120px);
+    gap: 10px;
+  }
+  
+  .single_imgs {
+    width: 117px;
+    height: 92px;
+  }
+}
+
+@media only screen and (max-width:653px) {
+  .card {
+    max-width: 290px;
+    height: 325px;
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+  }
+  
+  .container_div {
+    display: grid;
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: repeat(2, 120px);
+    gap: 0px;
+  }
+  
+  .single_imgs {
+    width: 107px;
+    height: 82px;
+  }
+}
+
+@media only screen and (max-width:617px) {
+  .card {
+    max-width: 270px;
+    height: 325px;
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+  }
+  
+  .container_div {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 0px;
+  }
+  
+  .single_imgs {
+    width: 97px;
+    height: 82px;
+  }
+}
+
+@media only screen and (max-width:617px) {
+  .card {
+    max-width: 230px;
+    height: 305px;
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+  }
+  
+  .container_div {
+    display: grid;
+    grid-template-columns: repeat(2, 102px);
+    grid-template-rows: repeat(2, 97px);
+    gap: 10px;
+  }
+  
+  .single_imgs {
+    width: 97px;
+    height: 82px;
+  }
+}
+
+@media only screen and (max-width:517px) {
+  .card {
+    max-width: 220px;
+    height: 295px;
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+  }
+  
+  .container_div {
+    display: grid;
+    grid-template-columns: repeat(2, 92px);
+    grid-template-rows: repeat(2, 97px);
+    gap: 10px;
+  }
+  
+  .single_imgs {
+    width: 87px;
+    height: 72px;
+  }
+  .p_grids{
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width:490px) {
+  .card {
+    max-width: 455px;
+    height: 395px;
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+  }
+  
+  .container_div {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 130px);
+    gap: 10px;
+  }
+  
+  .single_imgs {
+    width: 147px;
+    height: 102px;
+  }
+}
+
+@media only screen and (max-width:377px) {
+  .card {
+    max-width: 425px;
+    height: 395px;
+    background-color: rgb(250, 250, 250);
+    padding: 20px;
+  }
+  
+  .container_div {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 130px);
+    gap: 10px;
+  }
+  
+  .single_imgs {
+    width: 147px;
+    height: 102px;
+  }
+}

@@ -14,7 +14,7 @@ const MainCard = ({ image, title, linkText, linkURL, cardImages }) => {
               cardImages.map(item =>
                 <Link className={c.link_of_little_cont} key={uuidv4()} to={item.link}>
                   <img className={c.single_imgs} src={item.image} alt="" />
-                  <p style={{ color: "gray", fontSize: "12px" }}>{item.subtitle}</p>
+                  <p className={c.p_grids}>{item.subtitle}</p>
                 </Link>
               )
             }

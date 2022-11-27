@@ -82,3 +82,26 @@ background: linear-gradient(180deg, rgba(5,5,5,0) 0%, #EAEDED 78%);
   cursor: pointer;
   transition: 0.5s;
 }
+
+@media only screen and (max-width:950px) {
+  .left_btn{
+    width: 60px;
+    height: 200px;
+  }
+  
+  .right_btn{
+    width: 60px;
+    height: 200px;
+  }
+}
+@media only screen and (max-width:510px) {
+  .left_btn{
+    width: 60px;
+    height: 115px;
+  }
+  
+  .right_btn{
+    width: 60px;
+    height: 115px;
+  }
+}

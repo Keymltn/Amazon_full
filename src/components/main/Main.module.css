@@ -46,7 +46,7 @@
 }
 
 .carusel__left {
-  padding: 30px 7px;
+  padding: 40px 7px;
   cursor: pointer;
   border: transparent;
   font-size: 30px;
@@ -63,7 +63,7 @@
 }
 
 .carusel__right {
-  padding: 30px 7px;
+  padding: 40px 7px;
   cursor: pointer;
   border: transparent;
   font-size: 30px;
@@ -149,5 +149,59 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 10px;
+  }
+}
+
+@media only screen and (max-width:950px) {
+  .main {
+    margin-top: -500px;
+  }
+}
+
+@media only screen and (max-width:942px) {
+  .main {
+    margin-top: -500px;
+  }
+}
+
+@media only screen and (max-width:740px) {
+  .main {
+    margin-top: -500px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width:942px) {
+  .main {
+    margin-top: -585px;
+  }
+}
+
+@media only screen and (max-width:490px) {
+  .main {
+    margin-top: -585px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: auto;
+  }
+
+  .Main_wrapper__fnNAy {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin: auto;
+    padding: 20px;
   }
 }

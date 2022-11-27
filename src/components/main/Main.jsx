@@ -14,7 +14,7 @@ const Main = () => {
     "https://m.media-amazon.com/images/I/91vnzZO5yPL._AC_SY200_.jpg",
     "https://m.media-amazon.com/images/I/81EVdWdmOKL._AC_SY200_.jpg",
     "https://m.media-amazon.com/images/I/8144Vic9C5L._AC_SY200_.jpg",
-    "https://m.media-amazon.com/images/I/81t-IstQ+ZL._AC_SY200_.jpg",
+    "https://m.media-amazon.com/images/I/81t-IstQ+ZL._AC_SYa200_.jpg",
     "https://m.media-amazon.com/images/I/811ftjOO5FL._AC_SY200_.jpg",
     "https://m.media-amazon.com/images/I/61CJaHZI6cL._AC_SY200_.jpg",
     "https://m.media-amazon.com/images/I/81TMvHnKlwL._AC_SY200_.jpg",
