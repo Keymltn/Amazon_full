@@ -140,7 +140,7 @@ function Header({ setIsSidebarOpen }) {
             <a href="index.html">12 Days of Deals</a>
           </div>
           <div className="navbar-nav-link">
-            <a href="index.html">Customer Service</a>
+            <Link to='/customer-service'>Customer Service</Link>
           </div>
           <div className="navbar-nav-link">
             <a href="index.html">Registry</a>
