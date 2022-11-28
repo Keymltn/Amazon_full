@@ -58,21 +58,7 @@ const ProductInfo = () => {
                   <img src="https://www.pngkey.com/png/full/10-105184_polka-dots-pattern-png-dot-pattern-png-transparent.png" alt="" />
                 </div>}
             </div>
-            <h1>{productData.name}</h1>
-            {
-              productData.ratings % 1 === 0 ?
-              new Array(productData?.ratings).fill("#").map(() => 
-                <BsStarFill key={uuidv4()}/>
-              ) : 
-              <>
-              { 
-                new Array(Math.floor(productData?.ratings)).fill("#").map(() => 
-                    <BsStarFill key={uuidv4()}/>
-                )
-              }
-              <BsStarHalf/>
-              </>
-            }
+            <h1>{productData.name}</h1> 
           </div>
           {isTrackerActive && <div style={{
             backgroundImage: `url(${productData?.image[activeImageIndex].url})`,

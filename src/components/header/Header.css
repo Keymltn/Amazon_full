@@ -59,7 +59,7 @@ form {
   justify-content: space-between;
 }
 
-a {
+.header a {
   color: white;
   text-decoration: none;
 }

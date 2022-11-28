@@ -120,8 +120,8 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
       <FiX style={setIsSidebarOpen === true ? { display: "block" } : { display: "none" }} className={c.close} onClick={() => { setIsSidebarOpen(false) }} />
       <div className={c.sidebarWrapper} >
         <Link className={c.link_sign} to="/Login" onClick={() => { setIsSidebarOpen(false) }}>
-          <HiUserCircle style={{ marginRight: "10px", fontSize: "30px" }} />
-          <h2>Hello, Sign in</h2>
+          <HiUserCircle style={{ marginRight: "10px", fontSize: "30px", color: "#fff" }} />
+          <h2 style={{color: "#fff"}}>Hello, Sign in</h2>
         </Link>
         {
           sidebarData.slice(0, sidebarLimit).map(sidebarEl =>

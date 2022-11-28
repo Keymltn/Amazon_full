@@ -1,37 +1,83 @@
-.container{
-  width: 1250px;
+.container {
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
   padding: 20px 5px 20px 5px;
   background-color: #fff;
 }
 
-.essentialsImg{
-  height: 245px;
+.essentialsImg {
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.essentialsTitle{
+.essentialsTitle {
   padding: 20px 0 20px 0;
   text-align: center;
   font-weight: 400;
-   font-size: 28px;
-   line-height: 36px;
+  font-size: 28px;
+  line-height: 36px;
 }
 
-.essentialsWrapper{
-  /* display: flex;
-  flex-wrap: wrap; */
+.essentialsWrapper {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 
-.gamersLink{
-  width: 249px;
-  height: 270px;
+.gamersLink {
+  width: 100%;
+  height: 100%;
   color: #011;
   font-size: 14px;
   text-align: center;
+}
+
+@media only screen and (max-width:970px) {
+  .essentialsWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .container>p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width:750px) {
+  .essentialsWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .container > p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width:490px) {
+  .essentialsWrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .container > p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width:441px) {
+  .container > p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  .container > p {
+    font-size: 20px;
+  }
 }

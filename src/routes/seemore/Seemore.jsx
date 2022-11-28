@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const EssentialsGamers = () => {
   return (
-    <div className={c.container}>
+    <div className="container">
       <img
         className={c.essentialsImg}
         src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_LPHeader_Gamers_en_US.png"
