@@ -1,37 +1,40 @@
-.productInfo__wrapper{
+.productInfo__wrapper {
   display: flex;
+  margin-top: 20px;
 }
 
-.image__wrapper{
+.image__wrapper {
   width: 100px;
   height: 400px;
   display: flex;
   flex-direction: column;
   gap: 10px 0;
   padding: 10px;
+  display: flex;
 }
 
-.imageItem{
+.imageItem {
   width: 100%;
   height: 100px;
   background-color: #fff;
 }
 
-.imageItem > img{
+.imageItem>img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.mainImage__container{
+.mainImage__container {
   width: auto;
   height: 500px;
+  padding: 50;
   position: relative;
   cursor: pointer;
   overflow: hidden;
 }
 
-.tracker{
+.tracker {
   width: 200px;
   height: 200px;
   background-color: rgba(30, 143, 255, 0.329);
@@ -39,21 +42,72 @@
   pointer-events: none;
 }
 
-.tracker > img{
+.tracker>img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   filter: brightness(400%);
 }
 
-.mainImage{
+.mainImage {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  margin-top: -112px;
 }
 
-.preview{
+.left_info_infos {
+  padding-left: 10px;
+}
+
+.preview {
   width: 400px;
   height: 400px;
   background-color: blue;
+}
+
+.asd {
+  padding: 20px 0;
+}
+
+@media only screen and (max-width:1023px) {
+  .preview {
+    display: none;
+  }
+
+  .tracker {
+    display: none;
+  }
+
+  .tracker>img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:813px) {
+  .mainImage {
+    margin-top: -160px;
+  }
+}
+
+.carting_img {
+  cursor: pointer;
+  background-color: rgb(255, 200, 0);
+  color: rgb(25, 24, 24);
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  margin-left: 10px;
+  transition: .5s;
+}
+
+.carting_img:hover{
+  background-color: rgb(255, 216, 76);
+}
+
+.carting_img:active{
+  background-color: rgb(202, 159, 3);
 }

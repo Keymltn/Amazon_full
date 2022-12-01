@@ -17,7 +17,7 @@ const EssentialsGamers = () => {
         {seemoredata.map(gamersItem => {
           return (
             <Link key={uuidv4()} to="/seemore/products" className={c.gamersLink}>
-              <img src={gamersItem.image} width="229px" />
+              <img src={gamersItem.image} width="229px" alt=""/>
               <p>{gamersItem.title}</p>
             </Link>
           );

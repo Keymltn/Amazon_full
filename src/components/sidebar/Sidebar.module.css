@@ -18,7 +18,6 @@
 
 .close{
   position: fixed;
-  /* display: none; */
   left: 400px;
   font-size: 30px;
 }
@@ -65,3 +64,12 @@
 .to_right{
   font-size: 25px;
 }
+
+/* @media only screen and (max-width:590px) {
+  .sidebar{
+    width: 60;
+  }
+  .sidebarOpen{
+    min-width: 60px;
+  }
+} */

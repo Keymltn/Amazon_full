@@ -45,7 +45,7 @@ function Header({ setIsSidebarOpen }) {
             <p className="location__text">Uzbekistan</p>
           </div>
         </div>
-        <form action="post">
+        <form action="post"  className='post'>
           <div className="form">
             <select name="filter" className="filter" style={selectedOption.length <= 10 ? { width: selectedOption.length * 14 + "px" } : { width: selectedOption.length * 8 + "px" }} onChange={(e) => { setSelectedOption(e.target.value) }}>
               <option value="all">All</option>

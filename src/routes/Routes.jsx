@@ -6,6 +6,7 @@ import CustomerService from './customer-service/CustomerServices'
 import Seemore from './seemore/Seemore';
 import Products from './products/Products';
 import ProductInfo from './product-info/ProductInfo';
+import Cart from './cart/Cart';
 
 const Routes = () => {
   return (
@@ -30,6 +31,9 @@ const Routes = () => {
       </Route>
       <Route path="/seemore/products/:productId">
         <ProductInfo />
+      </Route>
+      <Route path="/cart">
+        <Cart />
       </Route>
     </>
   )

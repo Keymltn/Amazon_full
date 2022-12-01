@@ -189,7 +189,7 @@ const Products = () => {
         </div>
       </div>
       <div className={c.product_left}>
-        <h2>Result</h2>
+        <h2>Results:</h2>
         {
           allProductsData.map(product =>
             <Link className={c.to_side_infos} to={`/seemore/products/${product._id}`} key={product._id}>
